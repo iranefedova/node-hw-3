@@ -9,7 +9,7 @@ class ChatApp extends EventEmitter {
 
     this.title = title;
 
-    // Посылать каждую секунду сообщение
+    // Посылать каждую секунду сообщение приветик
     setInterval(() => {
       this.emit('message', `${this.title}: ping-pong`);
   }, 1000);
